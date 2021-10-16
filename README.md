@@ -1,26 +1,27 @@
 # Chart printer
 
-Program for printing charts of "the problem of the pursuit of bodies". 
+Program for printing charts for "chase problem".
+
+![velocity in time](img/Figure_1.png)
+![way of bodies in time](img/Figure_2.png)
+![distance in time](img/Figure_3.png)
 
 
-## Installation
+## How to run
 
-Use [pip](https://pip.pypa.io/en/stable/) to install all required packages.
+The easiest way to launch the program is to run the chart_printer.exe file.
+
+Or you can use [pip](https://pip.pypa.io/en/stable/) to install all required packages, and then run it in python:
 
 ```bash
 pip install -r requirements.txt 
-```
-
-## Usage
-
-To start program from console type:
-
-```bash
 python ./chart_printer.py
 ```
 
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
 
 ## Authors
 [D1N3SHh](https://github.com/D1N3SHh)

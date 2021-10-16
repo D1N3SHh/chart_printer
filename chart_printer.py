@@ -49,9 +49,10 @@ def velocity_in_time():     # V = V0A + at
         va_table.append(float(velocity_a + acceleration_a * t))
         vb_table.append(float(velocity_b + acceleration_b * t))
 
-    print('\nt [s]', time_scale)
-    print('vA [m/s]', va_table)
-    print('vB [m/s]', vb_table)
+    # print('\nt [s]', time_scale)
+    # print('vA [m/s]', va_table)
+    # print('vB [m/s]', vb_table)
+    plt.title("velocity in time")
     plt.ylabel("v [m/s]")
     plt.xlabel("t [s]")
     plt.plot(time_scale, va_table, label = 'A')
@@ -72,9 +73,10 @@ def way_of_bodies_in_time():    # S = V0t + (at^2)/2
         sa_table.append(float(velocity_a * t + (acceleration_a * t*t) / 2))
         sb_table.append(float(velocity_b * t + (acceleration_b * t*t) / 2 + base_distance))
 
-    print('\nt [s]', time_scale)
-    print('sA [m]', sa_table)
-    print('sB [m]', sb_table)
+    # print('\nt [s]', time_scale)
+    # print('sA [m]', sa_table)
+    # print('sB [m]', sb_table)
+    plt.title("way of bodies in time")
     plt.ylabel("s [m]")
     plt.xlabel("t [s]")
     plt.plot(time_scale, sa_table, label = 'A')
@@ -86,16 +88,17 @@ def way_of_bodies_in_time():    # S = V0t + (at^2)/2
     plt.show()
 
 
-def distance_in_time():     # l = sB - sA
+def distance_in_time():     # d = sB - sA
     global sa_table, sb_table, time_scale
 
     distance_table = []
     for i in range(0, len(time_scale)):
         distance_table.append(float(sb_table[i] - sa_table[i]))
 
-    print('\nt [s]', time_scale)
-    print('l [m]', distance_table)
-    plt.ylabel("l [m]")
+    # print('\nt [s]', time_scale)
+    # print('d [m]', distance_table)
+    plt.title("distance in time")
+    plt.ylabel("d [m]")
     plt.xlabel("t [s]")
     plt.plot(time_scale, distance_table, label = 'l')
     plt.ylim(ymin = 0)

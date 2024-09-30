@@ -24,7 +24,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 
 ## Authors
-[D1N3SHh](https://github.com/D1N3SHh)
+[jeli-t](https://github.com/jeli-t)
 
 
 ## License
